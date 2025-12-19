@@ -24,7 +24,7 @@ class Person(ABC):
         else:
             print(" العمر لازم أكبر من الصفر!")
 
-
+    @abstractmethod
     def display_info(self): pass
 
 
@@ -103,4 +103,5 @@ class StudentManager:
                 print("🗑 تم حذف الطالب.\n")
                 return
         print(" لم يتم العثور على الطالب.\n")
+
 
