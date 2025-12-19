@@ -22,7 +22,7 @@ class Person(ABC):
         if new_age > 0:
             self.__age = new_age
         else:
-            print(" العمر لازم أكبر من الصفر!")
+            print(" age must be greter than 0!")
 
     @abstractmethod
     def display_info(self): pass
@@ -103,5 +103,6 @@ class StudentManager:
                 print("🗑 تم حذف الطالب.\n")
                 return
         print(" لم يتم العثور على الطالب.\n")
+
 
 
